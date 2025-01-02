@@ -51,7 +51,7 @@ do
      VALIDATE $? "installing package"
   else
      echo -e "$pacakge is $Y alreday installed $N"
-   fi
+  fi
 done
 
 
