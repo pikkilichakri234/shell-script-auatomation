@@ -10,7 +10,7 @@
 #!/bin/bash
 LOGS_FOLDER="/var/log/shell-script"
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
-TIMESTAMP=$(date+%Y-%m-%d-%H-%M-%S)
+TIMESTAMP=$(date +%Y-%m-%d-%H-%M-%S)
 LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME-$TIMESTAMP.log
 
 USERID=$(id -u)
@@ -46,11 +46,11 @@ do
   dnf list installed $package &>> $LOG_FILE
   if [ $? -ne 0 ]
   then
-     echo "$package is not installed..." | tee -a $LOG_FILE
-     dnf install $package -y &>>$LOG_FILE
-     VALIDATE $? "installing package"
+    echo "$package is not installed..." | tee -a $LOG_FILE
+    dnf install $package -y &>>$LOG_FILE
+    VALIDATE $? "installing package"
   else
-     echo -e "$pacakge is $Y alreday installed $N"
+    echo -e"$pacakge is $Y alreday installed $N"
   fi
 done
 
