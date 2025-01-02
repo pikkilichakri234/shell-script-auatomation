@@ -7,5 +7,5 @@
 
 for package in $@
 do
-   dnf install $package
+   dnf install $package -y
 done 
