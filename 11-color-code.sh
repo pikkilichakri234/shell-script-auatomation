@@ -38,7 +38,7 @@ then # not installed
         echo "Installing MySQL ... SUCCESS"
     fi
 else
-    echo "MySQL is already ... INSTALLED"
+    echo -e  "MySQL is already ... $Y INSTALLED"
 fi
 
 # if [ $? -ne 0 ]
@@ -63,7 +63,7 @@ then
         echo "Installing Git ... SUCCESS"
     fi
 else
-    echo "Git is already ... INSTALLED"
+    echo  -e "Git is already ... $Y INSTALLED"
 fi
 
 
