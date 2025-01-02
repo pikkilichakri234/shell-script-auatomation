@@ -11,6 +11,6 @@
       echo  -e "$2 is ... $R failure $N"  
       exit 1  # other then 0
     else
-      echo -e "$2 is ... $G sucess $N"
-
+       echo -e "$2 is ... $G sucess $N"
+    fi
  } 
