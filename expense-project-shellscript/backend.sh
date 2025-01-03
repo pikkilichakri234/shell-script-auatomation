@@ -67,7 +67,7 @@ VALIDATE $? "unzip backend"
 npm install &>>$LOG_FILE_NAME
 VALIDATE $? "Installing dependencies"
 
-cp /root/shell-script-auatomation/expense-project-shellscript /etc/systemd/system/backend.service
+cp -r /root/shell-script-auatomation/expense-project-shellscript /etc/systemd/system/backend.service
 
 # Prepare MySQL Schema
 
