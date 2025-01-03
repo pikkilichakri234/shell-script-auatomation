@@ -4,3 +4,7 @@
 LOG_FILE=/tmp/om.log
 
 echo "hello cron log message is $(date)" >> "$LOG_FILE"
+
+
+# crontab -e
+  # * * * * *  /tmp/om.log
