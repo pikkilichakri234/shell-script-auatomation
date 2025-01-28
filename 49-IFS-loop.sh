@@ -1,5 +1,5 @@
 #!/bin/bash
-reading lines from a file we using IFS (Internal Field Seperator)
+#reading lines from a file we using IFS (Internal Field Seperator)
 
 filename="om.txt"
 echo "contents of a file"
